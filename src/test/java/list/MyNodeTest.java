@@ -14,7 +14,5 @@ public class MyNodeTest {
                 mySecondNode.getNext().equals(myThirdNode);
         Assert.assertTrue(result);
 
-
-
     }
 }
