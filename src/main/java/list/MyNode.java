@@ -1,21 +1,31 @@
 package list;
 
-public class MyNode <K>{
 
+    public class MyNode <K>implements INode<K>{
+        private  K Key;
+        private  INode next;
+        public  MyNode(K key){
+            this.Key = key;
+            this.next = null;
+        }
 
-    private  MyNode next;
-    private  K Key;
-    public  MyNode(K key){
-        this.Key=null;
-        this.next=null;
+        @Override
+        public K getKey() {
+            return Key;
+        }
+
+        @Override
+        public void setKey(K key) {
+            this.Key=key;
+        }
+
+        public INode getNext() {
+            return next;
+        }
+
+        public void setNext(INode next) {
+            this.next = next;
+        }
     }
 
-    public MyNode getNext() {
-        return next;
-    }
-
-    public void setNext(MyNode next) {
-        this.next = next;
-    }
-}
 
