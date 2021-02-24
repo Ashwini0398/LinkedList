@@ -1,6 +1,7 @@
 package list;
 
 public class MyNode <K>implements INode<K>{
+
     private  K Key;
     private  INode next;
     public  MyNode(K key)
@@ -26,6 +27,6 @@ public class MyNode <K>implements INode<K>{
     public void setNext(INode next) {
         this.next = next;
     }
-    }
+}
 
 

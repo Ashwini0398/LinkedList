@@ -1,6 +1,6 @@
 package list;
 
-public class MyLinkedList {
+public class MyLinkedList<K> {
     public INode head;
     public INode tail;
 
@@ -51,6 +51,16 @@ public class MyLinkedList {
         this.tail = tempNode;
         tempNode = tempNode.getNext();
         return  tempNode;
+    }
+    public INode SearchAnElementInALinkedList(K key) {
+        INode tempNode = this.head;
+        while (tempNode != null) {
+            if (tempNode.equals(key)) {
+                return tempNode;
+            }
+            tempNode = tempNode.getNext();
+        }
+        return null;
     }
 
     public  void printMyNodes(){
