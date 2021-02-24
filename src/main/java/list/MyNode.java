@@ -2,7 +2,6 @@ package list;
 
 public class MyNode <K>implements INode<K>{
 
-
     private  K Key;
     private  INode next;
     public  MyNode(K key)
